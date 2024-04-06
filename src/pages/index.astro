@@ -13,7 +13,7 @@ const response = await fetch("https://cms.theadhocracy.co.uk/api", {
 	body: `
 			{ 
 				updatesEntries(type: "drank", limit: 10) {
-					... on updates_drank_Entry {
+					... on drank_Entry {
 						id
 						brewery {
 							title
